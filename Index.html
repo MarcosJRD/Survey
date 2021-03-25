@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+</head>
+<body>
+  <link rel="stylesheet" href="SurCss.css">
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Let us know your condition on this Pandemic</p>
+  <form id="survey-form">
+    <fieldset id="top">
+      <legend>Personal information:</legend>
+      <span class="form-group"><label id="name-label" for="name">Name: </label><input id="name" type="text" required placeholder="Enter you name"></span>
+      <span class="form-group"><label id="email-label" for="email">Email: </label><input id="email" type="email" required placeholder="Enter you Email"></span>
+      <span class="form-group"><label id="number-label" for="number">Age: </label><input id="number" type="number" min="0" max="100" required placeholder="Enter you age"></span>
+    </fieldset>
+    <fieldset>
+      <span class="form-group">
+        <label id="dropdown-label" for="dropdown">What are you doing in this Pandemic?</label>
+        <select id="dropdown">
+          <option>Studying</option>
+          <option>Working</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>  
+        </select>
+      </span>
+    </fieldset>
+    <fieldset>
+      <label id="dropdown-label">How are you in this Pandemic</label>
+      <span class="form-group checker">
+        <input id="definitely" type="radio" name="recommendations" value="definitely">
+        <label for="definitely">Very Good</label>
+      </span>
+      <span class="form-group checker">
+        <input id="maybe" type="radio" name="recommendations" value="maybe">
+        <label for="maybe">Good</label>
+      </span>
+      <span class="form-group checker">
+        <input id="not" type="radio" name="recommendations" value="not">
+        <label for="not">Not Good</label>
+      </span>
+    </fieldset>
+    <fieldset>
+     <label id="check-label">What are the Challenges you faced in this pandemic
+     (Check all that apply): </label>
+     <span class="form-group checker">
+      <input type="checkbox" name="improvements" value="Front-end">
+      <label>Lack of Financial</label>
+    </span>
+    <span class="form-group checker">
+      <input type="checkbox" name="improvements" value="Back-end">
+      <label>Lack of Food and Water</label>
+    </span>
+    <span class="form-group checker">
+      <input type="checkbox" name="improvements" value="Data Visualization">
+      <label>Problem in your Mental Health</label>
+    </span>
+    <span class="form-group checker">
+      <input type="checkbox" name="improvements" value="Challenges">
+      <label>Problem in your Physical Health</label>
+    </span>
+  </fieldset>
+  <fieldset>
+    <span class="form-group">
+      <label id="comments-label">Any Problems or Issues you face on this Pandemic</label>
+      <textarea id="comment" placeholder="Enter your comment here..." rows="5"></textarea>
+    </span>
+    <input type="submit" value="Submit" id="submit">
+  </fieldset>
+</body>
+</form>
+</html>
